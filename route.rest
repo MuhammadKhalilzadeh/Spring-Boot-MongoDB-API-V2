@@ -1,0 +1,48 @@
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    // "id": "1",
+    "fname" : "Mohammad",
+    "lname" : "Khalilzadeh",
+    "phone" : "09121234567",
+    "email" : "mohammad@mail.org",
+    "address" : "In the 1st street"
+}
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    // "id": "1",
+    "username" : "mohammad",
+    "password" : "12341234"
+}
+
+###
+GET http://localhost:8080/employees
+
+###
+
+GET http://localhost:8080/users
+###
+
+GET http://localhost:8080/employees/64d7c59694e10245b1851483
+
+###
+DELETE http://localhost:8080
+Content-Type: application/json
+
+{
+    "id": "2",
+    "fname" : "Mehrdad",
+    "lname" : "Kh",
+    "phone" : "09121234567",
+    "email" : "mkh@mail.org",
+    "birthdate" : "1377-10-03"
+}
+
+###
+DELETE http://localhost:8080/employees/64d7c59694e10245b1851483
+Content-Type: application/json
